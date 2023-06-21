@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="zh-cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>wes1eywang | wes1eywang</title><meta name="author" content="wes1eywang"><meta name="copyright" content="wes1eywang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Github入门教程什么是Github GitHub 是世界上最大的开放源代码社区。 Microsoft 拥有 GitHub。 GitHub 是一个受你工作方式启发的开发平台。 从开放源代码到商业，你可以托管和评审代码，管理项目，并与 4000 万开发人员一起构建软件。 GitHub 是 Git 存储库托管服务，它添加了许多功能。 Git 是一种命令行工具，而 GitHub 提供了基于 Web 的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wes1eywang">
+<meta property="og:url" content="http://www.wes1ey.cn/2023/06/21/Git%E5%85%A5%E9%97%A8%E5%92%8CGithub%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:site_name" content="wes1eywang">
+<meta property="og:description" content="Github入门教程什么是Github GitHub 是世界上最大的开放源代码社区。 Microsoft 拥有 GitHub。 GitHub 是一个受你工作方式启发的开发平台。 从开放源代码到商业，你可以托管和评审代码，管理项目，并与 4000 万开发人员一起构建软件。 GitHub 是 Git 存储库托管服务，它添加了许多功能。 Git 是一种命令行工具，而 GitHub 提供了基于 Web 的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.wes1ey.cn/img/favicon.jpg">
+<meta property="article:published_time" content="2023-06-21T08:44:30.053Z">
+<meta property="article:modified_time" content="2023-06-21T09:10:32.383Z">
+<meta property="article:author" content="wes1eywang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.wes1ey.cn/img/favicon.jpg"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="http://www.wes1ey.cn/2023/06/21/Git%E5%85%A5%E9%97%A8%E5%92%8CGithub%E7%9A%84%E4%BD%BF%E7%94%A8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'wes1eywang',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-21 17:10:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="wes1eywang"><img class="site-icon" src="/img/favicon.jpg"/><span class="site-name">wes1eywang</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-21T08:44:30.053Z" title="Created 2023-06-21 16:44:30">2023-06-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-06-21T09:10:32.383Z" title="Updated 2023-06-21 17:10:32">2023-06-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Github入门教程"><a href="#Github入门教程" class="headerlink" title="Github入门教程"></a>Github入门教程</h1><h2 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h2><blockquote>
+<p>GitHub 是世界上最大的开放源代码社区。 Microsoft 拥有 GitHub。 GitHub 是一个受你工作方式启发的开发平台。</p>
+<p>从开放源代码到商业，你可以托管和评审代码，管理项目，并与 4000 万开发人员一起构建软件。</p>
+<p>GitHub 是 Git 存储库托管服务，它添加了许多功能。</p>
+<p>Git 是一种命令行工具，而 GitHub 提供了基于 Web 的图形界面。</p>
+<p>它还为每个项目提供访问控制和多种协作功能，如 Wiki 和基本任务管理工具。</p>
+<p>那么，使用 GitHub 的主要优势是什么？ 几乎每个开放源代码项目都使用 GitHub 来管理其项目。</p>
+<p>如果项目是开源的且包含 Wiki 和问题跟踪器，那么可免费使用 GitHub，这样能够轻松获得更深入的文档并获得有关项目的反馈。</p>
+</blockquote>
+<p>以上是Github的官方——Microsoft微软的官方介绍，我知道你没看，那么来看看我对Github的认知</p>
+<blockquote>
+<p>Github——一个装代码的，可以无数次使用Git将自己的代码合并，管理版本，以及（<del>偷看</del>）学习别人代码怎么写的地方。</p>
+</blockquote>
+<p>那么问题来了，要怎么开始使用自己的Github呢？</p>
+<p>马上开始</p>
+<h2 id="如何开始使用Github"><a href="#如何开始使用Github" class="headerlink" title="如何开始使用Github"></a>如何开始使用Github</h2><h3 id="1、下载Git"><a href="#1、下载Git" class="headerlink" title="1、下载Git"></a>1、下载Git</h3><ul>
+<li>Windows下载可以直接使用<a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.1/Git-2.41.0-64-bit.exe">GIT2.41.0</a></li>
+<li>其他系统可以使用<a target="_blank" rel="noopener" href="https://git-scm.com/download/">GIT官网</a></li>
+</ul>
+<h3 id="2、什么是Git"><a href="#2、什么是Git" class="headerlink" title="2、什么是Git"></a>2、什么是Git</h3><blockquote>
+<ul>
+<li>刚刚如果你点了上面的链接且没有魔法</li>
+<li>那么你的下载速度应该很慢</li>
+<li>别着急，正好读读Git的前世今生</li>
+</ul>
+</blockquote>
+<p><strong>Git</strong>是一个分布式的代码版本管理系统，被开发的原因我觉得可能你想不到，是为了管理Linux的内核版本，听说是开发Linux的大佬在写Linux内核时使用SVN&#x2F;BITKeeper等软件（听了好多版本）突发奇想写出来的。为什么说它是分布式呢，</p>
+<p>这是SVN的系统架构，</p>
+<p><img src="C:\Users\waami\Desktop\202003071955105.png" alt="202003071955105"></p>
+<p>集中式代码管理的核心是服务器，所有开发者在开始新一天的工作之前必须从服务器获取代码，然后开发，最后解决冲突，提交。所有的版本信息都放在服务器上。如果脱离了服务器，开发者基本上可以说是无法工作的。<br>SVN 的优缺点：</p>
+<p>SVN对中文支持好，操作简单，使用没有难度，美工人员，产品人员，测试人员，实施人员都可轻松上手。使用界面统一，功能完善，操作方便。<br>SVN的特点概括起来主要由以下几条：</p>
+<p>1.每个版本库有唯一的URL（官方地址），每个用户都从这个地址获取代码和数据；</p>
+<p>2.获取代码的更新，也只能连接到这个唯一的版本库，同步以取得最新数据；</p>
+<p>3.提交必须有网络连接（非本地版本库）；</p>
+<p>4.提交需要授权，如果没有写权限，提交会失败；</p>
+<p>5.提交并非每次都能够成功。如果有其他人先于你提交，会提示“改动基于过时的版本，先更新再提交”… 诸如此类；</p>
+<p>6冲突解决是一个提交速度的竞赛：手快者，先提交，平安无事；手慢者，后提交，可能遇到麻烦的冲突解决。</p>
+<p>而这是Git的架构</p>
+<p><img src="C:\Users\waami\Desktop\20200307195820782.png" alt="20200307195820782"></p>
+<p>Git特性：</p>
+<p>1.Git中每个克隆(clone)的版本库都是平等的。你可以从任何一个版本库的克隆来创建属于你自己的版本库，同时你的版本库也可以作为源提供给他人，只要你愿意。</p>
+<p>2.Git的每一次提取操作，实际上都是一次对代码仓库的完整备份。提交完全在本地完成，无须别人给你授权，你的版本库你作主，并且提交总是会成功。</p>
+<p>3.甚至基于旧版本的改动也可以成功提交，提交会基于旧的版本创建一个新的分支。</p>
+<p>4.Git的提交不会被打断，直到你的工作完全满意了，PUSH给他人或者他人PULL你的版本库，合并会发生在PULL和PUSH过程中，不能自动解决的冲突会提示您手工完成。</p>
+<p>5.冲突解决不再像是SVN一样的提交竞赛，而是在需要的时候才进行合并和冲突解决。</p>
+<p>所以，Git分布式、SVN集中式各有各的好处和缺点，在选择时要注意哦。</p>
+<h3 id="3、Git第一次使用"><a href="#3、Git第一次使用" class="headerlink" title="3、Git第一次使用"></a>3、Git第一次使用</h3><p>在你安装完GIT后，你就会发现，你的右键菜单出现了两个选项，分别是 Git bash here 和 Git Gui here，</p>
+<p>我们使用的时候一般都是用Git bash here，它的作用就是打开命令行。如下图↓。</p>
+<p><img src="C:\Users\waami\AppData\Roaming\Typora\typora-user-images\image-20230621170800020.png" alt="image-20230621170800020"></p>
+<p>如果你看到了这个图，那么你就可以继续往下看了。</p>
+<h3 id="4、创建账号链接Github"><a href="#4、创建账号链接Github" class="headerlink" title="4、创建账号链接Github"></a>4、创建账号链接Github</h3><p>打开<a target="_blank" rel="noopener" href="http://www.github.com/">www.github.com</a></p>
+<p><img src="C:\Users\waami\AppData\Roaming\Typora\typora-user-images\image-20230621170936830.png" alt="image-20230621170936830"></p>
+<p>看，一个闪亮的SignUP按钮，直接点它！！！</p>
+<p><img src="C:\Users\waami\AppData\Roaming\Typora\typora-user-images\image-20230621171015483.png" alt="image-20230621171015483"></p>
+<p>在你经过了半天的实验以后你就会获得这样一个界面</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://www.wes1ey.cn">wes1eywang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://www.wes1ey.cn/2023/06/21/Git%E5%85%A5%E9%97%A8%E5%92%8CGithub%E7%9A%84%E4%BD%BF%E7%94%A8/">http://www.wes1ey.cn/2023/06/21/Git%E5%85%A5%E9%97%A8%E5%92%8CGithub%E7%9A%84%E4%BD%BF%E7%94%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/favicon.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/06/16/hexo-setup/" title="hexo-setup"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">hexo-setup</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/favicon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">wes1eywang</div><div class="author-info__description">鸡腿爱写小程序</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wes1eywang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Wes1eyWang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:wes1eywang@yeah.net" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Github%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">Github入门教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFGithub"><span class="toc-number">1.1.</span> <span class="toc-text">什么是Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8Github"><span class="toc-number">1.2.</span> <span class="toc-text">如何开始使用Github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E4%B8%8B%E8%BD%BDGit"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、下载Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFGit"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、什么是Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81Git%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">3、Git第一次使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E5%88%9B%E5%BB%BA%E8%B4%A6%E5%8F%B7%E9%93%BE%E6%8E%A5Github"><span class="toc-number">1.2.4.</span> <span class="toc-text">4、创建账号链接Github</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/21/Git%E5%85%A5%E9%97%A8%E5%92%8CGithub%E7%9A%84%E4%BD%BF%E7%94%A8/" title="No title">No title</a><time datetime="2023-06-21T08:44:30.053Z" title="Created 2023-06-21 16:44:30">2023-06-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/16/hexo-setup/" title="hexo-setup">hexo-setup</a><time datetime="2023-06-16T07:48:54.000Z" title="Created 2023-06-16 15:48:54">2023-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/16/hello-world/" title="No title">No title</a><time datetime="2023-06-16T07:43:01.153Z" title="Created 2023-06-16 15:43:01">2023-06-16</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By wes1eywang</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
